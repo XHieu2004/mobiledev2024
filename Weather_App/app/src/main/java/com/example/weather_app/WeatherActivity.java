@@ -6,11 +6,15 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class WeatherActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
@@ -25,7 +29,23 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.weather_viewpager);
         adapter = new WeatherAndForecastPagerAdapter(this);
         viewPager2.setAdapter(adapter);
-        Log.d("WeatherActivity", "ViewPager2 adapter set");
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout_test);
+        new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(TabLayout.Tab tab, int position) {
+                switch (position) {
+                    case 0:
+                        tab.setText("Ha Noi");
+                        break;
+                    case 1:
+                        tab.setText("Paris");
+                        break;
+                    case 2:
+                        tab.setText("HCMC");
+                        break;
+                }
+            }
+        }).attach();
 
     }
 
