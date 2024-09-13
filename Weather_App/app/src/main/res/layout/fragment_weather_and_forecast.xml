@@ -7,15 +7,15 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/weather_fragment_container"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         tools:layout="@layout/fragment_weather" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/forecast_fragment_container"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/weather_fragment_container"
         android:layout_marginTop="10dp"
