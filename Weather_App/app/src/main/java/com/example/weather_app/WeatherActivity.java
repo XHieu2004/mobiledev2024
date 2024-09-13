@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class WeatherActivity extends AppCompatActivity {
+    private ViewPager2 viewPager2;
+    private WeatherAndForecastPagerAdapter adapter;
 
     private static final String TAG = "WeatherActivity";
 
@@ -19,6 +22,10 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+        viewPager2 = findViewById(R.id.weather_viewpager);
+        adapter = new WeatherAndForecastPagerAdapter(this);
+        viewPager2.setAdapter(adapter);
+        Log.d("WeatherActivity", "ViewPager2 adapter set");
 
     }
 
