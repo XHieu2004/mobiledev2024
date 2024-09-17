@@ -17,8 +17,6 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class WeatherActivity extends AppCompatActivity {
-    private ViewPager2 viewPager2;
-    private WeatherAndForecastPagerAdapter adapter;
 
     private static final String TAG = "WeatherActivity";
 
@@ -26,8 +24,8 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-        viewPager2 = findViewById(R.id.weather_viewpager);
-        adapter = new WeatherAndForecastPagerAdapter(this);
+        ViewPager2 viewPager2 = findViewById(R.id.weather_viewpager);
+        WeatherAndForecastPagerAdapter adapter = new WeatherAndForecastPagerAdapter(this);
         viewPager2.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tablayout_test);
         new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {

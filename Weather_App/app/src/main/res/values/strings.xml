@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Weather_App</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="usth_weather">USTH Weather</string>
-    <string name="reload_icon">Reload</string>
+    <string name="showers">Showers</string>
+    <string name="scattered_showers">Scattered Showers</string>
+    <string name="mostly_cloudy">Mostly Cloudy</string>
+    <string name="partly_cloudy">Partly Cloudy</string>
+    <string name="thunderstorms">Thunderstorms</string>
+    <string name="scattered_thunderstorm">Scattered Thunderstorms</string>
+
+
+
 </resources>
 
 

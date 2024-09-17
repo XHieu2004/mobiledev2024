@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng dụng dự báo</string>
+    <string name="usth_weather">USTH- Thời tiết</string>
+    <string name="showers">Mưa rào</string>
+    <string name="scattered_showers">Mưa rào rải rác</string>
+    <string name="mostly_cloudy">Nhiều mây</string>
+    <string name="partly_cloudy">Có mây rải rác</string>
+    <string name="thunderstorms">Có sét</string>
+    <string name="scattered_thunderstorm">Dông rải rác</string>
+</resources>
