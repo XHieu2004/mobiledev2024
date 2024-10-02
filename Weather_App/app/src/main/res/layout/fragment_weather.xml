@@ -2,14 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="400dp"
     android:layout_height="wrap_content"
-    tools:context=".WeatherFragment"
+    android:layout_gravity="center_horizontal"
     android:background="#7DDB6D"
-    >
+    tools:context=".WeatherFragment">
 
     <RelativeLayout
-        android:layout_width="402dp"
+        android:layout_width="match_parent"
         android:layout_height="305dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
